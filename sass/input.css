@@ -26,7 +26,7 @@ footer {
 }
 
 body, header, footer {
-  margin: 20px 30px;
+  margin: 30px 30px;
 }
 
 body {
@@ -42,11 +42,13 @@ body {
 .logo {
   margin-top: 80px;
   margin-bottom: 40px;
+  width: 20%;
 }
 
 .title {
   font-weight: 300;
   color: hsl(0, 0%, 59%);
+  font-size: 1.4em;
 }
 
 strong {
@@ -56,25 +58,50 @@ strong {
 .subheading {
   font-weight: 300;
   color: black;
-  font-size: 1em;
+  font-size: 0.75em;
   margin-bottom: 30px;
 }
 
+form input[type=email], form input[type=submit] {
+  position: absolute;
+  opacity: 0;
+  pointer-events: none;
+}
+form .email, form .notify-me {
+  padding: 10px 25px;
+  width: 100%;
+  border: solid hsla(223, 87%, 63%, 0.5) 1px;
+  border-radius: 16px;
+  display: inline-block;
+  font-size: 0.7em;
+  margin: 3px 0;
+}
+form .email {
+  color: hsla(0, 0%, 59%, 0.6);
+  font-weight: 300;
+  text-align: left;
+}
+form .notify-me {
+  font-weight: 600;
+  color: #ffffff;
+  background-color: hsl(223, 87%, 63%);
+}
+
 .illustration {
-  width: 40%;
-  margin-bottom: 100px;
+  width: 100%;
+  margin: 50px 0 100px 0;
 }
 
 .socials-container {
   color: hsl(223, 87%, 63%);
-  font-size: 1.2em;
+  font-size: 0.9em;
 }
 .socials-container a {
   border-radius: 50%;
   width: 40px;
   border: solid hsla(0, 0%, 59%, 0.3) 1px;
   padding: 10px;
-  margin: 5px;
+  margin: 4px;
   text-align: center;
 }
 
@@ -84,9 +111,10 @@ footer {
 footer .copyright {
   color: hsl(0, 0%, 59%);
   font-weight: 300;
-  font-size: 1.2em;
-  margin: 20px;
+  font-size: 1em;
+  margin: 10px;
 }
 footer .attribution {
-  margin: 30px;
+  margin: 40px;
+  font-size: 0.7em;
 }/*# sourceMappingURL=input.css.map */
