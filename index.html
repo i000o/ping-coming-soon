@@ -15,9 +15,11 @@
   <h2 class="subheading">Subscribe and get notified</h2>
   <form> 
     <input type="email" id="email" name="email" class="input-email">
-    <label for="email">Your email address...</label>
-    <input type="submit" id="submit" name="submit" class="notify-me"> 
-    <label for="submit">Notify Me</label>
+    <label for="email" class="email">Your email address...</label> <!-- could this text be in the placeholder attribute for input, too?-->
+    <p class="error-prompt">Please provide a valid email address</p>
+    <p class="example-email">example@email/com</p>
+    <input type="submit" id="submit" name="submit" class="input-notify-me"> 
+    <label for="submit" class="notify-me">Notify Me</label>
   </form>
   <img class="illustration" src="images/illustration-dashboard.png" alt=""> 
   <div class="socials-container"> 

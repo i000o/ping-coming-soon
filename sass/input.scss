@@ -4,7 +4,6 @@
 
 
 // PAGE MARGINS 
-
 body, header, footer { 
     margin: 30px 30px;
 }
@@ -40,9 +39,8 @@ strong {
     color: black;
     font-size: 0.75em;
     margin-bottom: 30px;
+    margin-top: 5px;
 }
-
-// form 
 
 form { 
 
@@ -52,18 +50,30 @@ form {
         pointer-events: none;
     }
 
+    .error-prompt { 
+        display: none; 
+        color: hsl(354, 100%, 66%); 
+        font-weight: 300;
+        font-size: 0.6em;
+        font-style: italic;
+    }
+
+    .example-email { 
+        display: none;
+    }
+
     .email, .notify-me { 
-        padding: 10px 25px;
+        padding: 13px 30px;
         width: 100%;
-        border: solid hsl(223, 87%, 63%, 50%) 1px;
-        border-radius: 16px;
+        border: solid hsl(223, 87%, 63%, 30%) 1px;
+        border-radius: 20px;
         display: inline-block;
         font-size: 0.7em;
-        margin: 3px 0;
+        margin: 5px 0;
     }
 
     .email { 
-        color: hsl(0, 0%, 59%, 60%); 
+        color: hsl(0, 0%, 59%, 50%); 
         font-weight: 300; 
         text-align: left;
     }
@@ -77,17 +87,18 @@ form {
 
 .illustration {
     width: 100%; 
-    // can't stop img from shrinking 
-    margin: 50px 0 100px 0;
+    margin: 75px 0 150px 0;
+    height: 35svh;
 }
 
 .socials-container { 
     color: hsl(223, 87%, 63%);
     font-size: 0.9em;
+    margin-bottom: -10px;
 
     a { 
         border-radius: 50%; 
-        width: 40px;
+        width: 35px;
         border: solid hsl(0, 0%, 59%, 30%) 1px;
         padding: 10px; // space between icon and border 
         margin: 4px; // space between icons 
@@ -99,7 +110,7 @@ footer {
     display: inline;
 
     .copyright { 
-        color: hsl(0, 0%, 59%); 
+        color: hsl(0, 0%, 59%, 70%); 
         font-weight: 300; 
         font-size: 1em;
         margin: 10px;

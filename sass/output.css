@@ -60,6 +60,7 @@ strong {
   color: black;
   font-size: 0.75em;
   margin-bottom: 30px;
+  margin-top: 5px;
 }
 
 form input[type=email], form input[type=submit] {
@@ -67,17 +68,27 @@ form input[type=email], form input[type=submit] {
   opacity: 0;
   pointer-events: none;
 }
+form .error-prompt {
+  display: none;
+  color: hsl(354, 100%, 66%);
+  font-weight: 300;
+  font-size: 0.6em;
+  font-style: italic;
+}
+form .example-email {
+  display: none;
+}
 form .email, form .notify-me {
-  padding: 10px 25px;
+  padding: 13px 30px;
   width: 100%;
-  border: solid hsla(223, 87%, 63%, 0.5) 1px;
-  border-radius: 16px;
+  border: solid hsla(223, 87%, 63%, 0.3) 1px;
+  border-radius: 20px;
   display: inline-block;
   font-size: 0.7em;
-  margin: 3px 0;
+  margin: 5px 0;
 }
 form .email {
-  color: hsla(0, 0%, 59%, 0.6);
+  color: hsla(0, 0%, 59%, 0.5);
   font-weight: 300;
   text-align: left;
 }
@@ -89,16 +100,18 @@ form .notify-me {
 
 .illustration {
   width: 100%;
-  margin: 50px 0 100px 0;
+  margin: 75px 0 150px 0;
+  height: 35svh;
 }
 
 .socials-container {
   color: hsl(223, 87%, 63%);
   font-size: 0.9em;
+  margin-bottom: -10px;
 }
 .socials-container a {
   border-radius: 50%;
-  width: 40px;
+  width: 35px;
   border: solid hsla(0, 0%, 59%, 0.3) 1px;
   padding: 10px;
   margin: 4px;
@@ -109,7 +122,7 @@ footer {
   display: inline;
 }
 footer .copyright {
-  color: hsl(0, 0%, 59%);
+  color: hsla(0, 0%, 59%, 0.7);
   font-weight: 300;
   font-size: 1em;
   margin: 10px;

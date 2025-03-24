@@ -52,6 +52,6 @@ This is a solution to the [Ping coming soon page challenge on Frontend Mentor](h
 
 ## Useful resources
 
-[]()
+[<input type="email">](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/email)
 
 # ping-coming-soon
