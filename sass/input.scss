@@ -1,0 +1,80 @@
+@use 'reset'; 
+@use 'footer'; 
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+// PAGE MARGINS 
+
+body, header, footer { 
+    margin: 20px 30px;
+}
+
+body { 
+    font-family: 'libre franklin', sans-serif;
+    background-color: #ffffff;
+    display: flex; 
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center; 
+}
+
+.logo { 
+    margin-top: 80px;
+    margin-bottom: 40px;
+}
+
+.title { 
+    font-weight: 300;
+    color: hsl(0, 0%, 59%);
+}
+
+strong { 
+    color: initial;
+}
+
+.subheading { 
+    font-weight: 300; 
+    color: black;
+    font-size: 1em;
+    margin-bottom: 30px;
+}
+
+// form 
+
+.illustration {
+    width: 40%; 
+    // can't stop img from shrinking 
+    margin-bottom: 100px;
+}
+
+.socials-container { 
+    color: hsl(223, 87%, 63%);
+    font-size: 1.2em;
+
+    a { 
+        border-radius: 50%; 
+        width: 40px;
+        border: solid hsl(0, 0%, 59%, 30%) 1px;
+        padding: 10px; // space between icon and border 
+        margin: 5px; // space between icons 
+        text-align: center;
+    }
+}
+
+footer {
+    display: inline;
+
+    .copyright { 
+        color: hsl(0, 0%, 59%); 
+        font-weight: 300; 
+        font-size: 1.2em;
+        margin: 20px;
+    }
+
+    .attribution { 
+        margin: 30px;
+    }
+}
+
+

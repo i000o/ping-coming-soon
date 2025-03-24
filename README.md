@@ -28,7 +28,7 @@ This is a solution to the [Ping coming soon page challenge on Frontend Mentor](h
 
 :gear: Semantic HTML5 markup  
 :gear: CSS  
-:gear: Desktop-first workflow  
+:gear: Mobile-first workflow  
 :gear: Sass  
 :gear: JavaScript
 
@@ -53,4 +53,5 @@ This is a solution to the [Ping coming soon page challenge on Frontend Mentor](h
 ## Useful resources
 
 []()
+
 # ping-coming-soon
