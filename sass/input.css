@@ -63,39 +63,61 @@ strong {
   margin-top: 5px;
 }
 
-form input[type=email], form input[type=submit] {
-  position: absolute;
-  opacity: 0;
-  pointer-events: none;
-}
-form .error-prompt {
-  display: none;
-  color: hsl(354, 100%, 66%);
-  font-weight: 300;
-  font-size: 0.6em;
-  font-style: italic;
-}
-form .example-email {
-  display: none;
-}
-form .email, form .notify-me {
+form input[type=email], form button[type=submit] {
+  all: unset;
   padding: 13px 30px;
-  width: 100%;
+  width: 70%;
   border: solid hsla(223, 87%, 63%, 0.3) 1px;
   border-radius: 20px;
   display: inline-block;
   font-size: 0.7em;
   margin: 5px 0;
 }
-form .email {
+form input[type=email] {
+  cursor: text;
+  text-align: left;
+}
+form input[type=email]:valid {
+  border: solid hsl(223, 87%, 63%) 1px;
+}
+form input[type=email]:invalid:not(:-moz-placeholder-shown) {
+  border: solid hsl(354, 100%, 66%) 1px;
+}
+form input[type=email]:invalid:not(:placeholder-shown) {
+  border: solid hsl(354, 100%, 66%) 1px;
+}
+form input[type=email]::-moz-placeholder {
   color: hsla(0, 0%, 59%, 0.5);
   font-weight: 300;
   text-align: left;
+  cursor: text;
+  line-height: normal;
+  font-size: 1em;
 }
-form .notify-me {
+form input[type=email]::placeholder {
+  color: hsla(0, 0%, 59%, 0.5);
+  font-weight: 300;
+  text-align: left;
+  cursor: text;
+  line-height: normal;
+  font-size: 1em;
+}
+form .error {
+  display: none;
+  color: hsl(354, 100%, 66%);
+  font-weight: 300;
+  font-size: 0.6em;
+  font-style: italic;
+  margin-bottom: 20px;
+}
+form .error.visible {
+  display: inline-block;
+}
+form button[type=submit] {
   font-weight: 600;
   color: #ffffff;
   background-color: hsl(223, 87%, 63%);
+  cursor: pointer;
 }
 
 .illustration {

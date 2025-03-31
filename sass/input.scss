@@ -34,7 +34,7 @@ strong {
     color: initial;
 }
 
-.subheading { 
+.subheading {
     font-weight: 300; 
     color: black;
     font-size: 0.75em;
@@ -44,44 +44,57 @@ strong {
 
 form { 
 
-    input[type="email"], input[type="submit"] { // removes default styling of the inputs 
-        position: absolute;
-        opacity: 0;
-        pointer-events: none;
-    }
-
-    .error-prompt { 
-        display: none; 
-        color: hsl(354, 100%, 66%); 
-        font-weight: 300;
-        font-size: 0.6em;
-        font-style: italic;
-    }
-
-    .example-email { 
-        display: none;
-    }
-
-    .email, .notify-me { 
+    input[type="email"], button[type="submit"] { // SHARED STYLES BETWEEN EMAIL FIELD & SUBMIT BUTTON
+        all: unset; // removes default styling of the inputs 
         padding: 13px 30px;
-        width: 100%;
-        border: solid hsl(223, 87%, 63%, 30%) 1px;
+        width: 70%;
+        border: solid hsl(223, 87%, 63%, 30%) 1px; // weird? 
         border-radius: 20px;
         display: inline-block;
         font-size: 0.7em;
         margin: 5px 0;
     }
 
-    .email { 
-        color: hsl(0, 0%, 59%, 50%); 
-        font-weight: 300; 
+    input[type="email"] { 
+        cursor: text;
         text-align: left;
     }
 
-    .notify-me { 
+    input[type="email"]:valid { 
+        border: solid hsl(223, 87%, 63%) 1px;
+    }
+
+    input[type="email"]:invalid:not(:placeholder-shown) { // This combinator pseudoclass selector instructs 'Do not mark as invalid while the placeholder text is visible i.e. before the user as selected the text field. 
+        border: solid hsl(354, 100%, 66%) 1px;
+    }
+
+    input[type="email"]::placeholder { // PLACEHOLDER YOUR EMAIL ADDRESS... TEXT 
+        color: hsl(0, 0%, 59%, 50%); 
+        font-weight: 300; 
+        text-align: left;
+        cursor: text;
+        line-height: normal;
+        font-size: 1em;
+    }
+
+    .error { 
+        display: none; // keeps error prompt hidden from stack by default 
+        color: hsl(354, 100%, 66%); 
+        font-weight: 300;
+        font-size: 0.6em;
+        font-style: italic;
+        margin-bottom: 20px;
+    }
+
+    .error.visible { 
+        display: inline-block; // makes the error prompt appear dynamically with the right margins applicable 
+    }
+
+    button[type="submit"] {  // SUBMIT BUTTON 
         font-weight: 600; 
         color: #ffffff; 
         background-color: hsl(223, 87%, 63%);
+        cursor: pointer;
     }
 }
 

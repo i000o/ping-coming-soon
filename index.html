@@ -4,22 +4,20 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  <link src="js/script.js">
+  <script src="js/script.js"></script>
   <link rel="stylesheet" href="sass/output.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <title>Frontend Mentor | Ping coming soon page</title>
 </head>
 <body>
-  <img src="images/logo.svg" alt="" class="logo"> <!-- empty alt for cosmetic purposes -->
+  <img src="images/logo.svg" alt="Ping logo" class="logo"> 
   <h1 class="title">We are launching <strong>soon!</strong></h1>
   <h2 class="subheading">Subscribe and get notified</h2>
-  <form> 
-    <input type="email" id="email" name="email" class="input-email">
-    <label for="email" class="email">Your email address...</label> <!-- could this text be in the placeholder attribute for input, too?-->
-    <p class="error-prompt">Please provide a valid email address</p>
-    <p class="example-email">example@email/com</p>
-    <input type="submit" id="submit" name="submit" class="input-notify-me"> 
-    <label for="submit" class="notify-me">Notify Me</label>
+  <form class="form" novalidate> 
+    <input type="email" id="email" name="email" class="email" placeholder="Your email address.." required>
+    <label for="email" class="email"></label> 
+    <span class="error" aria-live="polite" role="alert"></span> <!-- Empty because I dynamically injected the error message in JS instead  -->
+    <button type="submit" id="submit" name="submit" class="submit">Notify Me</button> 
   </form>
   <img class="illustration" src="images/illustration-dashboard.png" alt=""> 
   <div class="socials-container"> 
