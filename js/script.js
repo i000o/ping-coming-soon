@@ -10,6 +10,7 @@ document.addEventListener("DOMContentLoaded", () => {
     let form = document.querySelector(".form"); // Are these classes present in your HTML? Yes. 
     let email = document.querySelector(".email");
     let error = document.querySelector(".error");
+    let notifyYou = document.querySelector(".subheading");
 
     console.log('Form element:', form);
     console.log('Email input element:', email);
@@ -41,7 +42,8 @@ document.addEventListener("DOMContentLoaded", () => {
         } else { // If the input passes the validation checks, do this: 
             email.setCustomValidity(""); // Clear any custom errors 
             error.classList.remove("visible"); // Hides the error message 
-            alert("We'll notify you!") // create a custom submission ano
+            notifyYou.textContent = "We'll notify you!"; // Replaces subheading element with this message
+            email.value = ""; // This clears the field on successful submission 
         }
     });
 });

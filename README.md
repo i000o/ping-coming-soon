@@ -39,6 +39,9 @@ This is a solution to the [Ping coming soon page challenge on Frontend Mentor](h
 ## Time taken
 
 :timer_clock: Estimation:
+24/04 - 3.5 hrs
+25/03 - 3 hrs
+31/05 - 3.5hrs
 
 - Total time:
 
@@ -69,6 +72,8 @@ This is a solution to the [Ping coming soon page challenge on Frontend Mentor](h
   - `classList` is a property in JS which allows you to easily modify/access classes using methods like `.add()`, `.remove()`, `.toggle()`, `contains()`. In this challenge we used `error.classList.remove("visible");` to `remove`/`add` visibility to error when/if we wanted them.
   - The `validity` object as part of the HTML Form Validation API. Every `input` has a `validity` property which contains boolean values (`true/false`) as validation states. These check whether inputs comply to necessary constraints or not. Key properties of the `validity` object are: `.valid` (`true/false`), `.valueMissing` (boolean), `.typeMismatch`, `.patternMismatch`, `.tooShort`/`.tooLong`, `rangeUnderflow`/`rangeOverflow`, `stepMismatch`, `..customError` which is set with `setCustomValidity()`.
   - `setCustomValidity()` doesn't _render_ anything visible in my UI. It just passes the error message value (the string) to the `validity.customError` state in the browser's memory. It doesn't do anything after that on its own, which is why you also needed to include the lines `.textContent`. `setCustomValidity()` is more of a behind-the-scenes performance, rather than anything your user would be seeing/experiencing on the screen. You need both because one serves validation logic and the other, visible feedback.
+  - I replaced the subheading text with my own on valid submission :slightly_smiling_face:
+  - I made the input field clear on valid submission :slightly_smiling_face:
 
 ## Development
 
