@@ -155,23 +155,20 @@ footer .attribution {
 }
 
 @media screen and (min-width: 426px) {
-  body, header, footer {
-    margin: 30px 470px;
-  }
   .logo {
-    width: 15%;
+    width: 70px;
   }
   .title {
-    font-size: 2.4em;
+    font-size: 2.2em;
     margin-top: 0;
     margin-bottom: 20px;
   }
   .subheading {
-    font-size: 1em;
+    font-size: 0.9em;
     margin-top: 0;
   }
   form {
-    width: 100%;
+    min-width: 420px;
     display: flex;
     flex-direction: row;
   }
@@ -201,6 +198,7 @@ footer .attribution {
   .illustration {
     height: 40svh;
     margin-bottom: 80px;
+    width: 450px;
   }
   footer {
     margin: 20px 0;
@@ -212,5 +210,19 @@ footer .attribution {
     cursor: pointer;
     background: hsl(223, 87%, 63%);
     color: #ffffff;
+  }
+}
+@media screen and (min-width: 768px) {
+  .title {
+    font-size: 2.3em;
+  }
+  .subheading {
+    font-size: 1em;
+  }
+  form {
+    min-width: 520px;
+  }
+  .illustration {
+    width: 500px;
   }
 }/*# sourceMappingURL=input.css.map */
