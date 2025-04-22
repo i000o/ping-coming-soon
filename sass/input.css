@@ -172,6 +172,11 @@ footer .attribution {
     display: flex;
     flex-direction: row;
   }
+  form .error.visible {
+    order: 3;
+    text-align: left;
+    flex-basis: 100%;
+  }
   form input[type=email], form button[type=submit] {
     border-radius: 50px;
   }

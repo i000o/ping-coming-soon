@@ -52,13 +52,13 @@ This is a solution to the [Ping coming soon page challenge on Frontend Mentor](h
   "Element selectors (e.g., `input`, `button`) have lower specificity.  
   Class selectors (e.g., `.email`, `.submit`) are more specific than element selectors.  
   Attribute selectors (e.g., `input[type="email"]`, `button[type="submit"]`) are even more specific than class selectors.  
-  **Pro Tip: When to Use What**  
+  **When to Use What**  
   Use classes (`.email`, `.submit`) for reusable, general-purpose styling.  
   Use attribute selectors (`input[type="email"]`, `button[type="submit"]`) for specific, role-based styles.  
   Use combination selectors when you want flexibility but with controlled specificity."
 - CoPilot Think Deeper function.
-- `<span>` is inline by default so will not take top/bottom margins!
-- Link to JS file with `<script>` _not_ `<link>`!
+- `<span>` is inline by default so will not take top/bottom margins.
+- Link to JS file with `<script>` _not_ `<link>`.
 - `.valueMissing` is a boolean that checks if the field is required and left empty. This relies on the `required` attribute in the HTML.
 - `.setCustomValidity` sets a _custom_ error message.
 - `.add("visible")` add the `visible` class (in this case, to the error span element).

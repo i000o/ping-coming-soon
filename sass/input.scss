@@ -161,6 +161,12 @@ footer {
         display: flex; 
         flex-direction: row;
 
+        .error.visible { 
+            order: 3; 
+            text-align: left;
+            flex-basis: 100%;
+        }
+
         input[type="email"], button[type="submit"] { // SHARED STYLES BETWEEN EMAIL FIELD & SUBMIT BUTTON
             border-radius: 50px;
         }
@@ -225,7 +231,9 @@ footer {
     }
 
     form { 
+
         min-width: 520px;
+
     }
 
     .illustration { 
