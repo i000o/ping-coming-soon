@@ -23,7 +23,7 @@ My focus here is to try to understand every line of Javascript I write, why it's
 
 I'm pleased with the outcome. There is one bug that I've asked for feedback on, but I'm yet to find an answer. The error messages shows up beside the submit button rather than underneath the input field. Other than that, I'm happy with the design, responsiveness and particularly, the Javascript. I wrote comments explaining it to myself for when I reference it later, to help embed my understanding. It helped a lot.
 
-![]()
+![](images/desktop.png)
 
 :jigsaw: [Live Site URL](https://i000o.github.io/ping-coming-soon/)  
 :pencil2: [Solution URL](https://www.frontendmentor.io/solutions/ping-coming-soon-js-client-side-validation-1zJWY-pAyD)
