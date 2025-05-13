@@ -7,22 +7,26 @@ This is a solution to the [Ping coming soon page challenge on Frontend Mentor](h
 - [Overview](#overview)
 - [Focus](#focus)
 - [Outcome](#outcome)
-- [Process](#process)
 - [Built with](#built-with)
 - [Lessons](#lessons)
-- [Development](#development)
 - [Useful resources](#useful-resources)
 
 ## Overview
 
+This challenge asks that for client-side form validation including empty field and formatting checks.
+
 ## Focus
+
+My focus here is to try to understand every line of Javascript I write, why it's there and what it's doing.
 
 ## Outcome
 
+I'm pleased with the outcome. There is one bug that I've asked for feedback on, but I'm yet to find an answer. The error messages shows up beside the submit button rather than underneath the input field. Other than that, I'm happy with the design, responsiveness and particularly, the Javascript. I wrote comments explaining it to myself for when I reference it later, to help embed my understanding. It helped a lot.
+
 ![]()
 
-:jigsaw: [Live Site URL]()  
-:pencil2: [Solution URL]()
+:jigsaw: [Live Site URL](https://i000o.github.io/ping-coming-soon/)  
+:pencil2: [Solution URL](https://www.frontendmentor.io/solutions/ping-coming-soon-js-client-side-validation-1zJWY-pAyD)
 
 ## Built with
 
@@ -31,10 +35,6 @@ This is a solution to the [Ping coming soon page challenge on Frontend Mentor](h
 :gear: Mobile-first workflow  
 :gear: Sass  
 :gear: JavaScript
-
-## Process
-
-1.
 
 ## Time taken
 
@@ -70,10 +70,6 @@ This is a solution to the [Ping coming soon page challenge on Frontend Mentor](h
 - I replaced the subheading text with my own on valid submission :slightly_smiling_face:
 - I made the input field clear on valid submission :slightly_smiling_face:
 - If you set a `width` to a `%`, it will always grow/shrink in relation to the container regardless of `flex-shrink: 0;` for instance. Instead, if you want the size to remain fixed, set a `px` unit instead.
-
-## Development
-
--
 
 ## Useful resources
 
